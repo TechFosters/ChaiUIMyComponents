@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* use for tailwind CSS suggestion showing
+@tailwind utilities; */
+@theme {
+  --color-chai: #d59758;
+  --color-chai-bg: #d49b61;
+  --color-chai-soft: rgba(212, 155, 98, 0.5);
+  --text-hero: 198px;
+  --text-semiHero: 32px;
+
+  --width-largeButton: 350px;
+  --height-largeButton: 70px;
+
+  /* ... */
+}
