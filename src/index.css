@@ -2,18 +2,26 @@
 
 /* use for tailwind CSS suggestion showing
 @tailwind utilities; */
-@theme {
+/* 💡 Your custom color variables */
+:root {
   --color-chai: #653818;
-  --color-chai-bg: #d49b61;
-  --color-chai-soft: rgba(212, 155, 98, 0.5);
-  --text-hero: 198px;
-  --text-semiHero: 32px;
   --color-chai-dark: #e2bb7b;
-
-  --width-largeButton: 350px;
-  --height-largeButton: 70px;
-
-  /* ... */
+  --color-chai-soft: rgba(212, 155, 98, 0.5);
 }
 
-@custom-variant dark (&:where(.dark, .dark *));
+/* 🌓 Dark mode overrides */
+.dark {
+  --color-chai: #e2bb7b;
+  --color-chai-dark: #653818;
+}
+
+/* ✅ Custom utility class for the button */
+.btn-chai {
+  background-color: var(--color-chai);
+  color: white;
+}
+
+.dark .btn-chai {
+  background-color: var(--color-chai-dark);
+  color: black;
+}
